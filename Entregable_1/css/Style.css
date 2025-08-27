@@ -1,0 +1,373 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+    
+body{ 
+  width: 100vw;
+  height: 100vh;
+  margin:0;
+  font-family:"Poppins";
+  background-image: url(/Entregable_1/img/mm.avif);
+  color: #385aa4;
+  background-size: cover;
+  display:grid;
+  place-items:center;
+  padding:24px;
+  
+}
+
+.contenedor{
+  width:min(980px, 100%);
+  box-shadow: 0 0 20px rgba(195, 17, 17, 0.5);
+  border-radius: 18px;
+}
+
+.perfil{
+  position:relative;
+  display:grid;
+  grid-template-columns: 240px 1fr;
+  gap:28px;
+  padding:28px;
+  background: linear-gradient(#0b0f1a);
+  border:1px solid #1f4ab6;
+  border-radius: #24304a;
+  box-shadow: #1d56d0;
+  backdrop-filter: blur(10px);
+  isolation:isolate;
+  overflow:hidden;
+  border-radius: 18px;
+}
+
+.perfil::before{
+  content:"";
+  position:absolute; 
+  inset:-2px;
+  background: conic-gradient(rgb(25, 25, 26));
+  filter: blur(40px); 
+  opacity:.18; z-index:-1;
+}
+
+.col-izq{
+  display:flex; 
+  flex-direction:column;
+  align-items:center; 
+  gap:18px;
+  padding:10px;
+}
+
+.FotoMia{
+  width: 180px;
+  height: 180px; 
+  border-radius: 28px; 
+  overflow:hidden; 
+  position:relative;
+  border:1px solid gray; 
+  box-shadow: 0 12px 24px rgba(195, 16, 16, 0.35);
+}
+
+img{
+  width:100%; 
+  height:100%; 
+  object-fit:cover; 
+  display:block;
+}
+
+.nombre{
+  text-align:center;
+  display:flex; 
+  flex-direction:column;
+  gap:6px;
+}
+
+h1{
+  margin:0; 
+  font-size: 22px; 
+  line-height:1.1; 
+  letter-spacing:.3px;
+  color: aliceblue;
+}
+    
+.Rol{
+  color: rgb(138, 107, 107); 
+  font-weight:400;
+  font-size: 17px;
+}
+
+.Habilidaddd{
+  display:flex; 
+  flex-wrap:wrap; 
+  gap:10px; 
+  justify-content:center;
+  
+}
+
+.Habilidadd{
+  padding:8px 12px; 
+  border-radius:999px; 
+  font-size:12px; 
+  letter-spacing:.2px;
+  border:1px solid #1d56d0; 
+  background: rgb(37, 55, 37);
+}
+
+.acciones{
+  display:flex; 
+  gap:12px;
+  width:100%;
+  
+}
+
+
+  .btn{
+  flex:1; 
+  text-align:center; 
+  padding:12px 14px; 
+  border-radius:12px; 
+  border: solid green;
+  background: rgb(13, 13, 13);
+  color:#eceff5; 
+}
+
+  .btn:hover{ 
+  transform: translateY(-2px); 
+  box-shadow:0 10px 18px rgba(0,0,0,.25);
+}
+
+.btn--primario{
+  background: linear-gradient(rgb(12, 13, 12)); 
+  border:solid green; 
+  color:#fdfdff;
+
+}
+
+.col-der{ 
+  display:grid; 
+  gap:22px; 
+}
+
+.bloque{
+  padding:18px; 
+  border:1px solid green; 
+  border-radius:14px; 
+  background: rgba(248, 240, 240, 0.04);
+}
+
+.fila{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap
+}
+
+.titulo{
+  display:flex;
+  align-items:center;
+  gap:10px; 
+  margin:0 0 10px 0; 
+  font-size:22px;
+  color: yellow;
+  
+}
+.tarjeta {
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  color: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 6px 15px rgba(0,0,0,0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tarjeta:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0px 10px 20px rgba(0,0,0,0.5);
+}
+
+.titulo {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  border-bottom: 2px solid rgba(255,255,255,0.3);
+  padding-bottom: 5px;
+}
+
+.lista-estadisticas {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lista-estadisticas li {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+.lista-estadisticas strong {
+  color: #ffdd57;
+}
+.biografia{ 
+  color: rgb(248, 250, 248); 
+  line-height:1.6; 
+  margin:0; 
+  font-size: 18px;
+}
+
+.lista-datos{ 
+  display:grid; 
+  gap:14px; 
+}
+.dato{ 
+  display:flex;
+  flex-direction:column;
+  gap:4px; 
+  padding:10px; 
+  border:1px solid green; 
+  border-radius:12px; 
+  background: rgb(33, 35, 33);
+}
+
+
+.habilidades{ 
+  display:flex; 
+  flex-wrap:wrap; 
+  gap:10px; 
+}
+
+.Habilidad{ 
+  position:relative; 
+  padding:10px 12px; 
+  border-radius:12px; 
+  border:1px solid rgb(20, 233, 20); 
+  background: linear-gradient(rgb(195, 211, 195)); 
+}
+
+
+.redes{ 
+  display:flex; 
+  gap:15px; 
+}
+
+.icono{
+  width:42px; 
+  height:42px; 
+  display:grid; 
+  place-items:center; 
+  border-radius:12px;
+  border:1px solid #0b0f1a;
+  background: rgb(209, 220, 209); 
+
+}
+
+.icono:hover{ 
+  transform: 
+  translateY(-2px); 
+}
+svg{ 
+  width:22px; 
+  height:22px; 
+}
+
+.estadistica{
+  display:grid;
+  grid-template-columns: 
+  repeat(3, 1fr); 
+  gap:12px;
+}
+
+.estadistica  {
+  padding:16px; 
+  border:1px solid #0a0c11; 
+  border-radius:14px; 
+  text-align:center; 
+  background: rgba(255,255,255,.04);
+    }
+.mini-bio {
+  margin-top: 18px;
+  text-align: center;
+  padding: 12px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid #1d56d0;
+  border-radius: 12px;
+  font-size: 14px;
+  color: #ffffff;
+  font-style: initial;
+}
+
+.contador {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.contador .item {
+  text-align: center;
+  background: rgba(255,255,255,0.08);
+  border-radius: 12px;
+  padding: 10px 15px;
+  border: 1px solid #1d56d0;
+  flex: 1;
+}
+
+.contador .item strong {
+  font-size: 20px;
+  color: #ffdd57;
+  display: block;
+}
+
+.contador .item span {
+  font-size: 13px;
+  color: #fffefe;
+}
+strong{ 
+  font-size:18px; 
+  display:block;
+  color: #90a6d2;
+  
+}
+
+span{ 
+  color:rgb(153, 220, 220); 
+  font-size:19px;
+}
+span.Datoss{
+  font-size: 18px;
+}
+footer{
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #1f4ab6;
+  background: rgba(12,12,12,0.7);
+  border-radius: 14px;
+  box-shadow: 0 0 20px rgba(29, 86, 208, 0.5);
+}
+
+@media (max-width: 820px){
+  .perfil{ 
+    grid-template-columns: 1fr;
+  }
+  .acciones{ 
+    flex-direction:column;
+    align-items: center; 
+    
+  }
+  .lista-datos{ 
+    grid-template-columns: 1fr; 
+  }
+  .estadisticas{ 
+    grid-template-columns: repeat(3, minmax(0,1fr)); 
+  }
+}
+
+
+
+
+@media (max-width: 420px){
+  .Habilidaddd{ 
+    justify-content:flex-start;
+  }
+  .estadistica{ 
+    grid-template-columns: 1fr 1fr; 
+  }
+}
