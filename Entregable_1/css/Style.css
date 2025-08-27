@@ -9,7 +9,7 @@ body{
   height: 100vh;
   margin:0;
   font-family:"Poppins";
-  background-color: #1a1b1c;
+  background-image: url("../img/mm.avif"); 
   color: #385aa4;
   background-size: cover;
   display:grid;
