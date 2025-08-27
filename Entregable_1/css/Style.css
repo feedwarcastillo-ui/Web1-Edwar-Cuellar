@@ -9,7 +9,7 @@ body{
   height: 100vh;
   margin:0;
   font-family:"Poppins";
-  background-image: url(/Entregable_1/img/mm.avif);
+  background-image: url("/Entregable_1/img/mm.avif"); 
   color: #385aa4;
   background-size: cover;
   display:grid;
